@@ -1,0 +1,279 @@
+html, body {
+  height: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+/* HEADER BEGIN*/
+#header {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  height: 400px;
+  max-width: 100%;
+  background-color: #3C3C3C;
+  margin-bottom: -20px;
+}
+.logo {
+  background-image: url("../img/StartupWE.png");
+  background-size: contain; /* Important*/
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  margin: 10px;
+  filter: brightness(350%);
+}
+/* HEADER END*/
+/* BARRE DE NAVIGATION BEGIN */
+#nav {
+  height: auto;
+  width: 100%;
+  margin-bottom: -20px;
+  position: relative;
+}
+.navigation {
+  font-family: "PantonNarrowBlack";
+  list-style-type: none;
+  overflow: hidden;
+  display: inline;
+  display: flex;
+  height: 45px;
+  color: white;
+  border-left: 30px solid #606060;
+}
+.element {
+  font-size: 150%;
+  font-weight: bold;
+  width: 25%;
+  background-color: #29AAE3;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  border-right: 2px solid white;
+  font-family: 'Poppins';
+}
+li a {
+  text-decoration: none;
+  color: inherit;
+}
+li:hover  {
+  background-color: #2081ab;
+  cursor: pointer;
+}
+#nav li:first-child {
+  margin-left: -40px;
+  border-left: 2px solid white;
+}
+.nav-button-size {
+  height: 100%;
+  width: 100%;
+}
+/* BARRE DE NAVIGATION END */
+/* PRESENTATION-RAPIDE BEGIN*/
+#presentation-rapide {
+  min-height: 600px;
+  height: auto;
+  width: 100%;
+  background-color: #1A4766;
+  display: flex;
+  color: white;
+  text-align: center;
+  font-family: 'Lato';
+  justify-content: space-between;
+}
+.singleUnderline {
+  text-decoration: underline;
+}
+#paragraphe1, #paragraphe2, #paragraphe3 {
+  max-width: 30%;
+  margin: auto;
+}
+#paragraphe1, #paragraphe3 {
+  font-size: 85%;
+}
+#paragraphe1 {
+  margin-left: 8px;
+}
+#paragraphe3 {
+  margin-right: 5px;
+}
+#paragraphe2 img {
+  margin: auto;
+  margin-left: -52px;
+}
+#button {
+  margin-top: 25px;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: #606060;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+              inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+#button:hover {
+  background-color: #707070;
+}
+#button:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+              inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+/* PRESENTATION-RAPIDE END*/
+/* PARTICIPANTS BEGIN*/
+#participants {
+  height: auto;
+  width: 100%;
+  background-color: #14354f;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Lato';
+  color: white;
+}
+#coach, #jury {
+  width: 30%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#coach img, #jury img {
+  height: auto;
+  width: 50%;
+  border-radius: 10px;
+}
+#coach h2, #jury h2 {
+  font-size: 50px;
+  text-decoration: underline;
+  text-align: center;
+}
+.identite {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  border-bottom: 3px solid gray;
+  max-height: 180px;
+  transition: all .2s ease-in-out;
+}
+.identite:hover {
+  transform: scale(1.2);
+}
+.description {
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  border: 3px solid gray;
+}
+.descriptionJury {
+  margin: auto;
+  text-align: center;
+  padding: -3px;
+  border: 3px solid gray;
+}
+.grayscale {
+  color: lightgray;
+  text-decoration: underline;
+}
+/* PARTICIPANTS END*/
+/* PROGRAMME BEGIN*/
+#flex-titre {
+  font-family: "Poppins";
+  text-decoration: underline overline;
+  width: 100%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  padding-top: 45px;
+  margin-bottom: -100px;
+  font-size: 400%;
+  color: white;
+  cursor: default;
+}
+#programme {
+  height: 750px;
+  width: 100%;
+  background-color: #1A4766;
+  display: flex;
+  flex-wrap: wrap;
+}
+table {
+  font-family: 'Lato';
+  border-collapse: collapse;
+  margin: auto;
+  background-color: lightgray;
+  border-radius: 25px;
+}
+#vendredi, #samedi, #dimanche {
+  max-width: 30%;
+  height: 500px;
+}
+#titre-vendredi, #titre-samedi, #titre-dimanche {
+  height: 50px;
+  font-size: 135%;
+}
+tr, th, td {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+td {
+  padding-left: 10px;
+  padding-right: 5px;
+}
+td:hover {
+  background-color: #E0E0E0;
+  cursor: default;
+}
+.bottom-planning:hover {
+  border-radius: 0 0 25px 25px;
+}
+th {
+  background-color: #29AAE3;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 4px solid gray;
+}
+/* PROGRAMME END*/
+/* FOOTER BEGIN*/
+footer {
+  display: flex;
+  background-color: #3C3C3C;
+  margin: 0;
+}
+#footcontainer {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+}
+#footcontainer span {
+  font-size: 120%;
+  text-decoration: underline;
+}
+#footcontainer > div {
+  min-width: 25%;
+  max-width: 33%;
+}
+#imageSponsors {
+  margin-top: 35px;
+  margin-left: -35px;
+}
+.reseau a {
+  text-decoration: none;
+  color: white;
+}
+footer p {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 80%;
+}
+iframe {
+  height:200px;
+  width:300px;
+}
+/* FOOTER END */
